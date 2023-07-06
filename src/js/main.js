@@ -36,7 +36,5 @@ buttonEl.addEventListener('click', () => {
     copy();
 })
 
-
-
 generatePassword()
 copy()
