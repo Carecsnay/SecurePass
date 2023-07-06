@@ -31,10 +31,12 @@ inputRangeEl.addEventListener('input', () => {
     generatePassword()
 })
 
-//Adicionando evento de escuta e acionando gatilho ao botão.
+//Adicionando evento de escuta e ação do botão.
 buttonEl.addEventListener('click', () => {
-    generatePassword();
+    copy();
 })
+
+
 
 generatePassword()
 copy()
