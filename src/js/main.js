@@ -11,5 +11,16 @@ function generatePassword() {
         sorteado que fará a composição da senha. */
 
         password += chars.substring(randomNumber, randomNumber + 1)
+
     }
+    //Capturando input
+    const inputPasswordEl = document.querySelector('#password');
+    //Setando senha randômica no campo password.
+    inputPasswordEl.value = password;
+
+    //Capturando input de slider ou range
+    const inputRangeEl = document.querySelector('#password-length');
+
 }
+
+generatePassword()
