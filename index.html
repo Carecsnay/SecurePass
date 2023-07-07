@@ -8,17 +8,31 @@
     <title>SecurePass</title>
     <link type="text/css" rel="stylesheet" href="./src/css/style.css">
 </head>
-
 <body>
-    <h1>Gerador de senha</h1>
-    <p>Utilize o meu gerador online para criar uma senha forte e segura.</p>
+    <main>
+        <section id="main">
+            <h1 class="title">SecurePass - Gerador de senhas seguras</h1>
+            <p class="subTitle">Utilize o meu gerador online para criar uma senha forte e segura.</p>
+        </section>
 
-    <input type="text" name="password" id="password"/>
-    <input type="range" name="password-length" id="password-length" value="16" min="4" max="64"/>
+        <section id="box">
+            <div class="password">
+                <div class="text">
+                    <input type="text" name="password" id="password" />
+                </div>
+                <div class="actions">
+                    <button id="copy1">C</button>
+                    <button id="renew">R</button>
 
-    <button>Copiar Senha</button>
-    <script type="text/javascript" src="./src/js/main.js">
-    </script>
+                </div>
+            </div>
+        </section>
+        <input type="range" name="password-length" id="password-length" value="16" min="4" max="64" />
+        <button id="copy2">Copiar Senha</button>
+
+    </main>
+
+    <script type="text/javascript" src="./src/js/main.js"></script>
 </body>
 
 </html>
