@@ -4,7 +4,8 @@ let passwordLength = 16;
 //Capturando elementos
 const inputPasswordEl = document.querySelector('#password');
 const inputRangeEl = document.querySelector('#password-length');
-const buttonEl = document.querySelector('button');
+const buttonEl1 = document.querySelector('#copy1');
+const buttonEl2 = document.querySelector('#copy2');
 
 const generatePassword = () => {
     const chars = "abcdefghijklmnopqrstuvwxyzçABCDEFGHIJKLMNOPQRSTUVWXYZÇ1234567890!@#$%&*()_+-[]{}"
@@ -32,7 +33,12 @@ inputRangeEl.addEventListener('input', () => {
 })
 
 //Adicionando evento de escuta e ação do botão.
-buttonEl.addEventListener('click', () => {
+buttonEl1.addEventListener('click', () => {
+    copy();
+})
+
+//Adicionando evento de escuta no outro botão.
+buttonEl2.addEventListener('click', () => {
     copy();
 })
 
